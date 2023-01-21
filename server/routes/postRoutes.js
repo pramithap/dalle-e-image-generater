@@ -17,7 +17,7 @@ cloudinary.config({
 router.route('/').get(async (req, res) => {
     try {
         const post = await Post.find({});
-        res.status(200).json({success: true, data: posts});    
+        res.status(200).json({success: true, data: post});    
     } catch (error) {
         console.log(error);
         res.status(500).json({success: false, data: error});
