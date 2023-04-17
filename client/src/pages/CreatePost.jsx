@@ -32,7 +32,7 @@ const CreatePost = () => {
                 },
                 crossorigin: true,
                 mode:'no-cors',
-                body: JSON.stringify(form)
+                body: JSON.stringify(...form),
             });
             //const test = JSON.stringify(form);
             //console.log(form);
@@ -75,7 +75,7 @@ const CreatePost = () => {
                     },
                     crossorigin: true,
                     mode: 'no-cors',
-                    body: JSON.stringify({prompt: form.prompt})
+                    body: JSON.stringify({prompt: form.prompt,}),
                 });
                 console.log(form.prompt);
                 const data = await response.json();

@@ -33,7 +33,7 @@ const Home = () => {
           'Access-Control-Allow-Origin': '*'
         },
         crossorigin: true,
-        mode:'no-cors'
+        mode:'no-cors',
       });
 
       if (response.ok) {
