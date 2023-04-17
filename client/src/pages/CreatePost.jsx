@@ -27,7 +27,8 @@ const CreatePost = () => {
             const response = await fetch ('https://dalle-e-wfk5.onrender.com/api/v1/post', {
                 method: 'POST',
                 headers: {
-                    'Content-Type' : 'application/json'
+                    'Content-Type' : 'application/json',
+                    'Access-Control-Allow-Origin':'https://prm-dall-e.com'
                 },
                 body: JSON.stringify(form)
             });
