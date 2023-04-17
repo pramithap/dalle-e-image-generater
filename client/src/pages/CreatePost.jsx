@@ -30,8 +30,6 @@ const CreatePost = () => {
                     'Content-Type' : 'application/json',
                     'Access-Control-Allow-Origin': '*',
                 },
-                crossorigin: true,
-                mode:'no-cors',
                 body: JSON.stringify({...form}),
             });
             //const test = JSON.stringify(form);
