@@ -35,7 +35,7 @@ const CreatePost = () => {
                 body: JSON.stringify(form)
             });
             //const test = JSON.stringify(form);
-            console.log(form);
+            //console.log(form);
             await response.json();
             console.log(response.json);
             navigate('/');
@@ -74,12 +74,12 @@ const CreatePost = () => {
                         'Access-Control-Allow-Origin': '*'
                     },
                     crossorigin: true,
-                    mode:'no-cors',
-                    body: JSON.stringify({prompt: form.prompt}),
-                })
-
+                    mode: 'no-cors',
+                    body: JSON.stringify({prompt: form.prompt})
+                });
+                console.log(form.prompt);
                 const data = await response.json();
-
+               
                 setForm ({...form, photo:`data:image/jpeg;base64, ${data.photo}`})
 
             } catch (error) {
