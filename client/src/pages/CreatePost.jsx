@@ -73,8 +73,6 @@ const CreatePost = () => {
                         'Content-Type' : 'application/json',
                         'Access-Control-Allow-Origin': '*',
                     },
-                    crossorigin: true,
-                    mode: 'no-cors',
                     body: JSON.stringify({prompt: form.prompt}),
                 });
                 const test = JSON.stringify({prompt: form.prompt});
