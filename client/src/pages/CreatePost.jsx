@@ -34,6 +34,8 @@ const CreatePost = () => {
                 mode:'no-cors',
                 body: JSON.stringify(form)
             });
+            const test = JSON.stringify(form);
+            console.log(test);
             await response.json();
             console.log(response.json);
             navigate('/');
