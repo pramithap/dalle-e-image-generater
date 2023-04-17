@@ -28,8 +28,9 @@ const CreatePost = () => {
                 method: 'POST',
                 headers: {
                     'Content-Type' : 'application/json',
-                    'Access-Control-Allow-Origin': '*'
+                    'Access-Control-Allow-Origin': '*',
                 },
+                mode:'no-cors',
                 body: JSON.stringify(form)
             });
             await response.json();
@@ -69,6 +70,7 @@ const CreatePost = () => {
                         'Content-Type' : 'application/json',
                         'Access-Control-Allow-Origin': '*'
                     },
+                    mode:'no-cors',
                     body: JSON.stringify({prompt: form.prompt}),
                 })
 
