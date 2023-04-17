@@ -28,11 +28,11 @@ const CreatePost = () => {
                 method: 'POST',
                 headers: {
                     'Content-Type' : 'application/json',
-                    'Access-Control-Allow-Origin': '*'
+                    'Access-Control-Allow-Origin': '*',
                 },
                 crossorigin: true,
                 mode:'no-cors',
-                body: JSON.stringify(...form),
+                body: JSON.stringify({...form}),
             });
             //const test = JSON.stringify(form);
             //console.log(form);
@@ -71,7 +71,7 @@ const CreatePost = () => {
                     method: 'POST',
                     headers: {
                         'Content-Type' : 'application/json',
-                        'Access-Control-Allow-Origin': '*'
+                        'Access-Control-Allow-Origin': '*',
                     },
                     crossorigin: true,
                     mode: 'no-cors',
