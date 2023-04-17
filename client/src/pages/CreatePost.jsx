@@ -28,7 +28,7 @@ const CreatePost = () => {
                 method: 'POST',
                 headers: {
                     'Content-Type' : 'application/json',
-                    'Access-Control-Allow-Origin':'https://prm-dall-e.com'
+                    'Access-Control-Allow-Origin': 'https://prm-dall-e.com'
                 },
                 body: JSON.stringify(form)
             });
@@ -67,7 +67,7 @@ const CreatePost = () => {
                     method: 'POST',
                     headers: {
                         'Content-Type' : 'application/json',
-                        'Access-Control-Allow-Origin':'https://prm-dall-e.com'
+                        'Access-Control-Allow-Origin': 'https://prm-dall-e.com'
                     },
                     body: JSON.stringify({prompt: form.prompt}),
                 })
